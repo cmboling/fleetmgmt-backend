@@ -70,20 +70,20 @@ jobs:
     - name: Install dependencies FleetMgmt.Test
       run: dotnet restore FleetMgmt.Test
       
-    - name: Build FleetMgmt.Data
-      run: dotnet build FleetMgmt.Data --configuration Release --no-restore
-    - name: Build FleetMgmt.Dto
-      run: dotnet build FleetMgmt.Dto --configuration Release --no-restore
-    - name: Build FleetMgmt.Domain
-      run: dotnet build FleetMgmt.Domain --configuration Release --no-restore
-    - name: Build FleetMgmt.Repository
-      run: dotnet build FleetMgmt.Repository --configuration Release --no-restore
-    - name: Build FleetMgmt.IdentityServer
-      run: dotnet build FleetMgmt.IdentityServer --configuration Release --no-restore
-    - name: Build FleetMgmt.Web
-      run: dotnet build FleetMgmt.Web --configuration Release --no-restore
-    - name: Build FleetMgmt.Test
-      run: dotnet build FleetMgmt.Test --configuration Release --no-restore
+#     - name: Build FleetMgmt.Data
+#       run: dotnet build FleetMgmt.Data --configuration Release --no-restore
+#     - name: Build FleetMgmt.Dto
+#       run: dotnet build FleetMgmt.Dto --configuration Release --no-restore
+#     - name: Build FleetMgmt.Domain
+#       run: dotnet build FleetMgmt.Domain --configuration Release --no-restore
+#     - name: Build FleetMgmt.Repository
+#       run: dotnet build FleetMgmt.Repository --configuration Release --no-restore
+#     - name: Build FleetMgmt.IdentityServer
+#       run: dotnet build FleetMgmt.IdentityServer --configuration Release --no-restore
+#     - name: Build FleetMgmt.Web
+#       run: dotnet build FleetMgmt.Web --configuration Release --no-restore
+#     - name: Build FleetMgmt.Test
+#       run: dotnet build FleetMgmt.Test --configuration Release --no-restore
       
     - name: Test
       run: dotnet test FleetMgmt.Test --no-restore --verbosity normal
